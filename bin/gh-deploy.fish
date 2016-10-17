@@ -16,3 +16,7 @@ git push origin (git subtree split --prefix=dist --onto=origin/master):master
 
 # uncomment back to ignoring dist folder
 sed -i -e 's/^#\/dist$/\/dist/g' .gitignore
+
+# re-commit restored .gitignore (should be sqoushed before next commit)
+git add .gitigone
+git commit -am restore\ .gitignore

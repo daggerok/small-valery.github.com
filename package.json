@@ -6,7 +6,7 @@
   "scripts": {
     "build:clean": "rimraf -rf dist",
     "build:prod": "ng build --prod",
-    "build:copy": "ncp LICENSE dist/; ncp README.md dist/",
+    "build:copy": "ncp LICENSE dist/",
     "build": "npm-run-all build:*",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
