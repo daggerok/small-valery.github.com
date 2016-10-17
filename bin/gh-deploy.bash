@@ -1,11 +1,14 @@
 #!/bin/bash
 
+# build project
+npm i && npm run build -- --prod
+
 # comment out '/dist' line in .gitignore file:
 sed -i -e 's/^\/dist$/#\/dist/g' .gitignore
 
 # dist subtree commit:
 git add .
-git commit -am $(date)\ dist\ subtree\ commit
+git commit -am $(date +%YY-%m-%d'T'%H:%m)\ dist\ subtree\ commit
 
 # deploy build dir for github pages
 git subtree push --prefix dist master
