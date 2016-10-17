@@ -34,3 +34,4 @@ Thumbs.db
 
 # project specific paths
 .gitignore-e
+coverage/
