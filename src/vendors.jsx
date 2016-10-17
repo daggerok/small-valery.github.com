@@ -1,0 +1,10 @@
+// react
+import 'react';
+import 'react-dom';
+import 'react-router';
+import 'react-css-transition-replace';
+// jquery
+import 'jquery';
+// bootstrap
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
